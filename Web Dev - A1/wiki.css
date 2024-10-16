@@ -1,0 +1,124 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Lato', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+#menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #ff4500;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #1a1a1a;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+#side-menu.open {
+    left: 0;
+}
+
+#main-content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    max-width: 1200px;
+}
+
+#main-content.shifted {
+    margin-left: 300px;
+}
+
+h1, h2, h3 {
+    border-bottom: 1px solid #ff4500;
+    padding-bottom: 5px;
+    color: #ff4500;
+}
+
+a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.collapsible {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.active, .collapsible:hover {
+    background-color: #333;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #0d0d0d;
+    border-left: 3px solid #ff4500;
+}
+
+#toc {
+    padding: 10px;
+}
+
+#toc h2 {
+    margin-top: 0;
+    color: #ff4500;
+}
+
+#toc ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#toc ul ul {
+    padding-left: 15px;
+}
+
+#toc a {
+    color: #ff8c00;
+}
+
+#contact-info {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: square;
+    color: #ff4500;
+}
+
+ul li {
+    color: #fff;
+}
+
+strong {
+    color: #ff8c00;
+}
