@@ -7,3 +7,8 @@
     1. First Job (12)
     2. Second Job (h2)
   3. (and so on)
+
+## Assignment 2
+1. Create a basic Django project structure with a 'wordle' app, including necessary files like views.py and urls.py.
+2. Set up a simple route that renders a custom HTML template for the Wordle game interface.
+3. Implement a static frontend for the Wordle game with a 6x5 grid and keyboard layout, styled with a black and orange theme to match the original game's aesthetics.
